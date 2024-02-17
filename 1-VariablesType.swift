@@ -59,4 +59,18 @@ let num3: Int = num2 - num1;
 let num4: Int = num3 * num2;
 let num5: Int = num4 / num3;
 let num6: Int = num5 % num4;
-print("END MATH -- ", num6)
+print("END MATH -- ", num6);
+
+// Check the Multiples there..
+let number: Int = 120;
+let isMultiplyOf3: Bool = number.isMultiple(of: 3);
+print("120 MULTIFFLE OF -- ", isMultiplyOf3);
+
+// Boolean games..
+var isAuthenticatedUser: Bool = false;
+isAuthenticatedUser = !isAuthenticatedUser; // Not False means True..
+print("IS_AUTHENTICATED -- ", isAuthenticatedUser);
+
+// Toggle method for Boolean games..
+isAuthenticatedUser.toggle();
+print("TOGGLED AUTHENTICATED USER -- ", isAuthenticatedUser);
