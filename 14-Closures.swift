@@ -102,14 +102,26 @@ let captainFirstTeam4 = team.sorted {
 print(captainFirstTeam4);
 
 
-// Make more shortern way..
-let captainFirstTeam5 = team.sorted { $0 < $1 };
+// Make reverse sorting..
+let captainFirstTeam5 = team.sorted(by: { $0 > $1 });
 print(captainFirstTeam5);
 
 
-// Make reverse sorting..
-let captainFirstTeam6 = team.sorted(by: { $0 > $1 });
+// Make more shortern way..
+let captainFirstTeam6 = team.sorted { $0 < $1 };
 print(captainFirstTeam6);
 
 
+// Another way of doing sorting..
+let captainFirstTeam7 = team.sorted { $0 > $1 };
+print(captainFirstTeam7);
 
+
+// LETS CHECK THE FILTER FUNCTION..
+let tOnly = team.filter { $0.hasPrefix("T") };
+print(tOnly);
+
+
+// UPPERCASED CHECK THE FUNCTION WITH MAP FUNCTION..
+let uppercasedTeam = team.map { $0.uppercased() };
+print(uppercasedTeam);
