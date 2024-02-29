@@ -1,4 +1,5 @@
 // HOW TO CREATE AND USE CLOSURES..
+// Closure is similar to the CallBack function of JavaScript..
 func greetUser () {
     print("Hi There!");
 }
@@ -71,3 +72,44 @@ let captainFirstTeam2 = team.sorted(by: { (name1: String, name2: String) -> Bool
 });
 
 print(captainFirstTeam2);
+
+
+// Making Closures more better..
+let captainFirstTeam3 = team.sorted(by: { name1, name2 in 
+    if name1 == "Anik" {
+        return true;
+    } else if name2 == "Anik" {
+        return false;
+    }
+
+    return name1 < name2;
+});
+
+print(captainFirstTeam3);
+
+
+// Lets making more shortern way..
+let captainFirstTeam4 = team.sorted {
+    if $0 == "Asad" {
+        return true;
+    } else if $1 == "Asad" {
+        return false;
+    }
+
+    return $0 < $1;
+};
+
+print(captainFirstTeam4);
+
+
+// Make more shortern way..
+let captainFirstTeam5 = team.sorted { $0 < $1 };
+print(captainFirstTeam5);
+
+
+// Make reverse sorting..
+let captainFirstTeam6 = team.sorted(by: { $0 > $1 });
+print(captainFirstTeam6);
+
+
+
