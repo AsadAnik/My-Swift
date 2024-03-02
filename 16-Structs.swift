@@ -38,3 +38,52 @@ struct Employee {
 var myEmployee = Employee(name: "Asad Anik", position: "Software Engineer", vacationRemaining: 10);
 myEmployee.takeVacation(days: 2);
 
+// Lets try to change the value of the Vacation Remaining..
+myEmployee.vacationRemaining += 10;
+print(myEmployee.vacationRemaining);
+
+
+// HOW TO COMPUTE PROPERTY VALUES DYNAMICALLY..
+struct Player {
+    let name: String;
+    let vacationAllocated = 14;
+    var vacationTaken = 0;
+
+    // Computed Property..
+    var vacationRemaining: Int {
+        return vacationAllocated - vacationTaken;
+    }
+}
+
+var archer = Player(name: "Archer");
+archer.vacationTaken = 10;
+print(archer.vacationRemaining);
+
+
+// Another example with a computed property..
+struct Audio {
+    let title: String;
+    let artist: String;
+    var vacationAllocated = 10;
+    var vacationTaken = 0;
+
+    // Computed Property..
+    // With Setter and Getter..
+    var vacationRemaining: Int {
+        get {
+            vacationAllocated - vacationTaken;
+        }
+
+        set {
+            vacationAllocated = vacationTaken + newValue;
+        }
+    }
+}
+
+var myMusic = Audio(title: "My Music", artist: "Asad Anik");
+myMusic.vacationTaken = 7;
+print(myMusic.vacationRemaining);
+
+// Setting the value of the Computed Property..
+myMusic.vacationRemaining = 10;
+print("VACATION ALLOCATED -- ", myMusic.vacationAllocated);
