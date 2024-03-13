@@ -12,7 +12,7 @@ struct Person {
     }
 }
 
-let person = Person(name: "Asad", age: 23, profession: "Engineer");
+let person = Person(name: "Asad", age: 25, profession: "Engineer");
 print("Name: \(person.name), Age: \(person.age), Profession: \(person.profession)");    
 
 // With Another Example..
