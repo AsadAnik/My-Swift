@@ -154,7 +154,7 @@ for i in 1...3 {
 // Lets appending the thing into another collection over there..
 var laptopCollections = [Laptop]();
 
-for i in 1...4 {
+for i in 1...4 { 
     print("=== \(i) is here for iterations for pushing the new data ===");
 
     let myLaptop = Laptop(id: i, model: "MacBook Pro", price: 10000);
