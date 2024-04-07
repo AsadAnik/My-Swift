@@ -70,7 +70,7 @@ class Vehicle {
     }
 }
 
-// Let's make a car class who will inheri that vehicle class.
+// Let's make a car class who will inherit that vehicle class.
 class Car: Vehicle {
     var numberOfSeats: Int;
     var isFourWheeler: Bool;

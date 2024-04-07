@@ -74,3 +74,17 @@ commute(distance: 1000, using: airplane);
 airplane.name = "Boing 555";
 airplane.currentPassengers = 5000;
 print("Name of the Airplane is = \(airplane.name) and current passengers are = \(airplane.currentPassengers)");
+
+
+// To upgrade our two functions to opaque return types, 
+// add the keyword some before their return type, like this:
+func getRandomNumber() -> some Equatable {
+    Int.random(in: 1...5);
+}
+
+func getRandomBool() -> some Equatable {
+    Bool.random();
+}
+
+print(getRandomNumber());
+print(getRandomBool());
