@@ -4,7 +4,7 @@
 
 <p align="center">
     <img src="https://img.shields.io/badge/Swift-5.7-brightgreen.svg" />
-    <a href="https://twitter.com/twostraws">
+    <a href="https://twitter.com/asadanik4321">
         <img src="https://img.shields.io/badge/Contact-@twostraws-orange" alt="Twitter: @twostraws" />
     </a>
 </p>
